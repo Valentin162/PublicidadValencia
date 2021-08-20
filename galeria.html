@@ -6,16 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Galería - Publicidad Valencia</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 	<nav class="nav">
 		<ul class="links">
-			<li><a href="./index.html">Inicio</a></li>
+			<li><a href="./index.html" id="index">Inicio</a></li>
 			<li><a href="#" id="products">Productos</a>
-				<ul>
-					<li><a href="#">Producto 1</a></li>
-					<li><a href="#">Producto 2</a></li>
-					<li><a href="#">Producto 3</a></li>
+				<ul id="dropdown">
+					<li><a href="#" data-product="product">Producto 1</a></li>
+					<li><a href="#" data-product="product">Producto 2</a></li>
+					<li><a href="#" data-product="product" id="last-product">Producto 3</a></li>
 				</ul>
 			</li>
 			<li><a href="./galeria.html">Galería</a></li>
@@ -38,5 +39,6 @@
 			<li><a href="./contactos.html">Contactos</a></li>
 		</ul>
 	</footer>
+	<script src="./scripts.js"></script>
 </body>
 </html>
