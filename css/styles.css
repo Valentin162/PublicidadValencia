@@ -2,7 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: #2A3737;
+  background: #465D5D;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -44,6 +47,10 @@ ul.links > li {
 footer.footer {
   color: white;
   text-align: center;
+  height: 150px;
+  margin-top: auto;
+  background: #2A3737;
+  width: 100%;
 }
 footer.footer a {
   color: white;
