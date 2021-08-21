@@ -99,7 +99,7 @@ header.header p.phone {
   font-size: 4rem;
   margin-bottom: 10px;
 }
-@media only screen and (max-width: 484px) {
+@media only screen and (max-width: 590px) {
   header.header p.phone {
     font-size: 2em;
     margin-bottom: 20px;
