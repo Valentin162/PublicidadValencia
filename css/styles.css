@@ -107,7 +107,7 @@ header.header p.phone {
 }
 
 nav.nav {
-  background: white;
+  background: #2A3737;
   text-align: right;
   padding: 0;
   margin: 0;
@@ -144,10 +144,10 @@ nav.nav ul#dropdown li {
 }
 nav.nav a {
   text-decoration: none;
-  color: black;
+  color: white;
+  background: #2A3737;
   padding: 20px;
   margin: 0;
-  background: white;
   height: 60px;
 }
 @media only screen and (max-width: 422px) {
@@ -158,8 +158,8 @@ nav.nav a {
 nav.nav a:hover, nav.nav a:focus {
   transition: color 0.5s, background-color 0.5s;
   text-decoration: underline;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 section.sections {
