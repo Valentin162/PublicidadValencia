@@ -84,6 +84,12 @@ header.header h2 {
   margin-bottom: 10px;
   margin-top: 0;
 }
+@media only screen and (max-width: 590px) {
+  header.header h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+}
 header.header p {
   font-size: 2em;
   text-align: center;
@@ -92,6 +98,12 @@ header.header p {
 header.header p.phone {
   font-size: 4rem;
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 484px) {
+  header.header p.phone {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
 }
 
 nav.nav {
@@ -172,7 +184,7 @@ section.sections a {
   padding: 10px;
 }
 section.sections a:hover, section.sections a:focus {
-  background: black;
+  background: #465D5D;
   color: white;
   transition: color 0.3s, background-color 0.3s;
 }
@@ -194,6 +206,9 @@ section.sections a:hover, section.sections a:focus {
   .gap .flex-center {
     gap: 0;
     flex-direction: column;
+  }
+  .gap .flex-center .break {
+    display: block;
   }
   .gap .flex-center .sections.gold {
     background: #93a8a9;

@@ -18,6 +18,10 @@ header.header {
 		font-size: 5rem;
 		margin-bottom: 10px;
 		margin-top: 0;
+		@media only screen and (max-width: 590px) {
+			font-size: 3rem;
+			margin-bottom: 20px;
+		}
 	}
 
 	p {
@@ -28,6 +32,10 @@ header.header {
 		&.phone {
 			font-size: 4rem;
 			margin-bottom: 10px;
+			@media only screen and (max-width: 484px) {
+				font-size: 2em;
+				margin-bottom: 20px;
+			}
 		}
 	}
 }
