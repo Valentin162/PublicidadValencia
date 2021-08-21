@@ -32,6 +32,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	
 	toggleDropdown('hide');
 
+	products.addEventListener('touchend', function(event) {
+		event.preventDefault();
+		this.focus();
+		toggleDropdown('show');
+		
+	});
+
+	products.addEventListener('click', function(event) {
+		event.preventDefault();
+	});
+
 	products.addEventListener('mouseover', function() {
 		toggleDropdown('show');
 
@@ -39,7 +50,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 	products.addEventListener('focusout', function(event) {
 		if (event.relatedTarget === index) {
-			toggleDropdown('hide')
+			toggleDropdown('hide');
+			console.log('test');
 		}
 	});
 
@@ -63,14 +75,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		toggleDropdown('remove');
 	});
 
-	products.addEventListener('click', function(event) {
-		event.preventDefault();
-	});
-
 	document.addEventListener('click', function(event) {
 		if (event.relatedTarget !== products) {
 			toggleDropdown('hide');
 		}
 	});
-
 });
