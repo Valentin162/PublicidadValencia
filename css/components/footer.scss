@@ -1,0 +1,18 @@
+footer.footer {
+	color: white;
+	text-align: center;
+
+	a {
+		color: white;
+		text-decoration: none;
+		margin-left: 10px;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+
+	li:not(:last-child):after {
+		content: ' | ';
+	}
+}

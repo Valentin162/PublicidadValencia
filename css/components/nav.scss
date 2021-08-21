@@ -3,8 +3,19 @@ nav.nav {
 	text-align: right;
 	padding: 0;
 	margin: 0;
-	height: 6px;
+	height: 58px;
 	width: 100%;
+	display: inline-block;
+	vertical-align: baseline;
+
+	& > ul {
+		margin-top: 0;
+
+		li {
+			padding-top: 20px;
+			height: 60px;
+		}
+	}
 
 	ul#dropdown {
 		list-style: none;
@@ -29,6 +40,7 @@ nav.nav {
 		padding: 20px;
 		margin: 0;
 		background: white;
+		height: 60px;
 
 		@media only screen and (max-width: 422px) {
 			padding: 5px;
