@@ -182,6 +182,7 @@ section.sections a {
   width: 30%;
   color: black;
   padding: 10px;
+  text-transform: lowercase;
 }
 section.sections a:hover, section.sections a:focus {
   background: #465D5D;

@@ -25,6 +25,7 @@ section.sections {
 		width: 30%;
 		color: black;
 		padding: 10px;
+		text-transform: lowercase;
 
 		&:hover, &:focus {
 			background: $bg;
