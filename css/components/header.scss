@@ -1,4 +1,33 @@
 header.header {
 	margin-top: 0;
 	padding-top: 0;
+	text-transform: uppercase;
+	color: white;
+
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		padding-top: 1.1em;
+		margin-bottom: 60px;
+	}
+
+	h2 {
+		font-family: 'Sue Ellen Francisco', cursive;
+		text-align: center;
+		color: $yellow;
+		font-size: 5rem;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+
+	p {
+		font-size: 2em;
+		text-align: center;
+		margin-top: 0;
+
+		&.phone {
+			font-size: 4rem;
+			margin-bottom: 10px;
+		}
+	}
 }

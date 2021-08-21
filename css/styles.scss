@@ -3,3 +3,9 @@
 @import './components/header.scss';
 @import './components/main.scss';
 @import './components/nav.scss';
+
+.container {
+	background: $bg;
+	margin: 0;
+	padding: 0;
+}

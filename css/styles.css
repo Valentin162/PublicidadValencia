@@ -1,47 +1,7 @@
-nav.nav {
-  background: white;
-  text-align: right;
-  padding: 0;
-  margin: 0;
-  height: 17px;
-}
-nav.nav ul#dropdown {
-  list-style: none;
-  position: absolute;
-  padding-left: 0;
-  margin-top: 20px;
-}
-nav.nav ul#dropdown li {
-  display: flex;
-  width: 120px;
-  align-items: center;
-  text-align: center;
-  white-space: wrap;
-}
-nav.nav a {
-  text-decoration: none;
-  color: black;
-  padding: 20px;
-  margin: 0;
-  background: white;
-}
-nav.nav a:hover, nav.nav a:focus {
-  transition: color 0.5s, background-color 0.5s;
-  text-decoration: underline;
-  background: black;
-  color: white;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.container {
-  background: #465D5D;
-  margin: 0;
-  padding: 0;
 }
 
 p {
@@ -62,6 +22,31 @@ ul.links > li {
 header.header {
   margin-top: 0;
   padding-top: 0;
+  text-transform: uppercase;
+  color: white;
+}
+header.header h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 1.1em;
+  margin-bottom: 60px;
+}
+header.header h2 {
+  font-family: "Sue Ellen Francisco", cursive;
+  text-align: center;
+  color: #ffed00;
+  font-size: 5rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+header.header p {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+}
+header.header p.phone {
+  font-size: 4rem;
+  margin-bottom: 10px;
 }
 
 nav.nav {
@@ -69,7 +54,7 @@ nav.nav {
   text-align: right;
   padding: 0;
   margin: 0;
-  height: 17px;
+  height: 6px;
 }
 nav.nav ul#dropdown {
   list-style: none;
@@ -96,6 +81,12 @@ nav.nav a:hover, nav.nav a:focus {
   text-decoration: underline;
   background: black;
   color: white;
+}
+
+.container {
+  background: #465D5D;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

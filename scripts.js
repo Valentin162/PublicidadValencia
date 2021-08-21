@@ -43,6 +43,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		}
 	});
 
+	products.addEventListener('mouseout', function(event) {
+		if (event.relatedTarget !== links[0]) {
+			toggleDropdown('hide');
+		}
+	});
+
 	products.addEventListener('focus', function() {
 		toggleDropdown('show');
 	});
