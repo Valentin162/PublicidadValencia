@@ -4,8 +4,63 @@
 @import './components/main.scss';
 @import './components/nav.scss';
 
-.container {
-	background: $bg;
-	margin: 0;
-	padding: 0;
+section.sections {
+	width: 40%;
+	height: 200px;
+	text-align: center;
+	padding: 10px;
+	font-size: 1.5em;
+	margin-bottom: 15px;
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 1em;
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		background: white;
+		margin: 1em auto;
+		width: 30%;
+		color: black;
+		padding: 10px;
+
+		&:hover, &:focus {
+			background: black;
+			color: white;
+			transition: color 0.3s, background-color 0.3s;
+		}
+
+		@media only screen and (max-width: 468px) {
+			width: 50%;
+		}
+	}
+}
+
+.gap .flex-center {
+	gap: 10px;
+	
+	.sections {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	@media only screen and (max-width: 1040px) {
+		gap: 0;
+		flex-direction: column;
+
+		.sections.gold {
+			background: $gray;
+		}
+
+		.sections {
+			width: 70%;
+
+			&:nth-child(even) {
+				background: $gold;
+			}
+		}
+	}
 }

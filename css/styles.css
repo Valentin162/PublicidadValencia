@@ -8,6 +8,12 @@ p {
   line-height: 1.5;
 }
 
+.container {
+  background: #465D5D;
+  margin: 0;
+  padding: 0;
+}
+
 ul.links {
   list-style: none;
   margin-bottom: 0;
@@ -17,6 +23,21 @@ ul.links > li {
   display: inline-block;
   margin-left: -4px;
   margin-bottom: 0;
+}
+
+.gray {
+  background: #93a8a9;
+}
+
+.gold {
+  background: #edbd3e;
+}
+
+.flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 header.header {
@@ -55,6 +76,7 @@ nav.nav {
   padding: 0;
   margin: 0;
   height: 6px;
+  width: 100%;
 }
 nav.nav ul#dropdown {
   list-style: none;
@@ -76,6 +98,11 @@ nav.nav a {
   margin: 0;
   background: white;
 }
+@media only screen and (max-width: 422px) {
+  nav.nav a {
+    padding: 5px;
+  }
+}
 nav.nav a:hover, nav.nav a:focus {
   transition: color 0.5s, background-color 0.5s;
   text-decoration: underline;
@@ -83,10 +110,60 @@ nav.nav a:hover, nav.nav a:focus {
   color: white;
 }
 
-.container {
-  background: #465D5D;
-  margin: 0;
-  padding: 0;
+section.sections {
+  width: 40%;
+  height: 200px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+section.sections h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+section.sections a {
+  display: block;
+  text-decoration: none;
+  background: white;
+  margin: 1em auto;
+  width: 30%;
+  color: black;
+  padding: 10px;
+}
+section.sections a:hover, section.sections a:focus {
+  background: black;
+  color: white;
+  transition: color 0.3s, background-color 0.3s;
+}
+@media only screen and (max-width: 468px) {
+  section.sections a {
+    width: 50%;
+  }
+}
+
+.gap .flex-center {
+  gap: 10px;
+}
+.gap .flex-center .sections {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 1040px) {
+  .gap .flex-center {
+    gap: 0;
+    flex-direction: column;
+  }
+  .gap .flex-center .sections.gold {
+    background: #93a8a9;
+  }
+  .gap .flex-center .sections {
+    width: 70%;
+  }
+  .gap .flex-center .sections:nth-child(even) {
+    background: #edbd3e;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

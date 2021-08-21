@@ -13,6 +13,12 @@ p {
 	line-height: 1.5;
 }
 
+.container {
+	background: $bg;
+	margin: 0;
+	padding: 0;
+}
+
 ul.links {
 	list-style: none;
 	margin-bottom: 0;
@@ -25,3 +31,18 @@ ul.links {
 
 }
 
+.gray {
+	background: $gray;
+}
+
+.gold {
+	background: $gold;
+}
+
+.flex-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
