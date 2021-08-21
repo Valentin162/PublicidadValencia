@@ -111,6 +111,11 @@ nav.nav > ul li {
   padding-top: 20px;
   height: 60px;
 }
+@media only screen and (max-width: 422px) {
+  nav.nav > ul li {
+    padding: 5px;
+  }
+}
 nav.nav ul#dropdown {
   list-style: none;
   position: absolute;
@@ -123,6 +128,7 @@ nav.nav ul#dropdown li {
   align-items: center;
   text-align: center;
   white-space: wrap;
+  margin-bottom: 0;
 }
 nav.nav a {
   text-decoration: none;
